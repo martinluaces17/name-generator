@@ -23,8 +23,8 @@ window.onload = function() {
       }
     }
 
-    var randomDomain =
-      domainGenerated[Math.floor(Math.random() * domainGenerated.length)];
+    let domainIndex = Math.floor(Math.random() * domainGenerated.length);
+    let randomDomain = domainGenerated[domainIndex];
     return randomDomain;
   }
 
